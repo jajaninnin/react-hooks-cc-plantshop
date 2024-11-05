@@ -18,10 +18,10 @@ function NewPlantForm({plants, setPlants, setInitPlants}) {
   function handleSubmit(event){
     event.preventDefault();
     const formD = formData
-    fetch(`http://localhost:6001/plants/`, {
+    fetch(`http://localhost:6001/plants`, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "Application/JSON"
       },
       body: JSON.stringify({
         "name": formD.name,

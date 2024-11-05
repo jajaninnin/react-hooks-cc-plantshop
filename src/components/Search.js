@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function Search({plants, setPlants, initPlants}) {
-  //const [ isSearch, setSearch ] = useState("")
+function Search({setPlants, initPlants}) {
+  const [ searchText, setSearchText ] = useState("");
 
-  function handleSearch(event) {
-    if (event.target.value === ""){
+  useEffect(() => {
+    if (searchText === ""){
       setPlants([...initPlants])
     } else {
       const search = initPlants.filter((plant) => {
-        if (plant.name.toLowerCase().includes(event.target.value.toLowerCase())) {
+        if (plant.name.toLowerCase().includes(searchText.toLowerCase())) {
           return true
         } else {
           return false
@@ -16,8 +16,8 @@ function Search({plants, setPlants, initPlants}) {
       })
       setPlants([...search])
     }
-    
-  }
+  }, [initPlants, searchText, setPlants]);
+  
 
   return (
     <div className="searchbar">
@@ -26,8 +26,8 @@ function Search({plants, setPlants, initPlants}) {
         type="text"
         id="search"
         placeholder="Type a name to search..."
-        
-        onChange={handleSearch}
+        onChange={(e) => setSearchText(e.target.value)}
+        value={searchText}
       />
     </div>
   );

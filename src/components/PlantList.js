@@ -27,7 +27,8 @@ function PlantList({plants, setPlants, setInitPlants}) {
         setPlants(plants)
         setInitPlants(plants)
       })
-    }, [setInitPlants, setPlants])
+    }, [setInitPlants, setPlants]);
+    
   return (
     <ul className="cards">{plants.map((plant) => {
       return <PlantCard key={plant.id} plant={plant} onDelete={onDelete} onUpdatePrice={onUpdatePrice}/>
