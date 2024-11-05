@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import NewPlantForm from "./NewPlantForm";
 import PlantList from "./PlantList";
 import Search from "./Search";
 
 function PlantPage() {
+  const [plants, setPlants ] = useState([])
+  const [ initPlants, setInitPlants ] = useState([])
+
   return (
     <main>
-      <NewPlantForm />
-      <Search />
-      <PlantList />
+      <NewPlantForm plants={plants} setPlants={setPlants} setInitPlants={setInitPlants}/>
+      <Search plants={plants} setPlants={setPlants} initPlants={initPlants} />
+      <PlantList plants={plants} setPlants={setPlants} setInitPlants={setInitPlants}/>
     </main>
   );
 }

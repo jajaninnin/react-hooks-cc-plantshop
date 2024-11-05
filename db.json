@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Aloe",
       "image": "./images/aloe.jpg",
-      "price": 15.99
+      "price": "12.5"
     },
     {
       "id": 2,
@@ -28,7 +28,7 @@
       "id": 5,
       "name": "Jade",
       "image": "./images/jade.jpg",
-      "price": 10.37
+      "price": "12"
     },
     {
       "id": 6,
@@ -40,7 +40,25 @@
       "id": 7,
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
-      "price": 55
+      "price": "30.50"
+    },
+    {
+      "name": "Snake",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.UD1mwvoJYC4Y_DDEHuOsGQHaHa%26pid%3DApi&f=1&ipt=089ad49d3395b4ea041e47d714b95597757816ddda88f3f9de9a1330ab7c0f5c&ipo=images",
+      "price": "9.7",
+      "id": 8
+    },
+    {
+      "name": "Fern",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.r_NpG42RRL-3cS6rRi-V1wHaHa%26pid%3DApi&f=1&ipt=c0577c04eae7977aead529c37e7b4127d566227676e6fc6367b5153acc51bd25&ipo=images",
+      "price": "10.5",
+      "id": 9
+    },
+    {
+      "name": "Corn Plant",
+      "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.9pMol1m0i4Ao1AnLN0KwbQHaHa%26pid%3DApi&f=1&ipt=bbc89a036b19faf06b6d474275c2654d8dd595cbb94d840b638472fdf82c214b&ipo=images",
+      "price": "9.5",
+      "id": 10
     }
   ]
 }
